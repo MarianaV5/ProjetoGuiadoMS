@@ -141,5 +141,17 @@ class Program
             // pause code execution
             readResult = Console.ReadLine();
         } while (menuSelection != "sair");
+
+        for (int i = 0; i < maxPets; i++)
+        {
+            if (ourAnimals[i, 0] != "ID #: ")
+            {
+                Console.WriteLine();
+                for (int j = 0; j < 6; j++)
+                {
+                    Console.WriteLine(ourAnimals[i, j]);
+                }
+            }
+        }
     }
 }
